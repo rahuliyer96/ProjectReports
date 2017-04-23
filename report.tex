@@ -1,0 +1,47 @@
+
+
+\documentclass[12pt,a4paper]{report}
+
+\textwidth 5.8in
+\usepackage{amsmath}
+\usepackage[pdftex]{graphicx} %for embedding images
+\usepackage{url} %for proper url entries
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<SMS BASED REMOTE ACCESS OF ANDROID DEVICE>}, pdfauthor={<author's name here>}, pdfsubject={<subject here>}, pdfkeywords={<keywords here>}]{hyperref} %for creating links in the pdf version and other additional pdf attributes, no effect on the printed document
+%\usepackage[final]{pdfpages} %for embedding another pdf, remove if not required
+
+
+
+\begin{document}
+\renewcommand\bibname{References} %Renames "Bibliography" to "References" on ref page
+
+%include other pages
+\input{title}
+\input{certificate}
+\input{acknow}
+\thispagestyle{empty}
+\pagebreak
+\input{abstract}
+\pagebreak
+
+
+
+\tableofcontents
+\thispagestyle{empty}
+\pagebreak
+\pagenumbering{roman}
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+
+\newpage
+\pagenumbering{arabic} %reset numbering to normal for the main content
+
+%objective changed to problem definition
+\input{introduction} 
+\input{Literature_Survey}%literature survey included.
+\input{implementation}
+\input{result_discussion}
+\input{conclusion_future}
+\input{ref}
+
+\end{document}
+
